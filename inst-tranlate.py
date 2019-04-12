@@ -23,7 +23,9 @@ def  parameter_to_binary(param):
 def to_binary(list):
     char = ''
     try:
-        if list[0] == 'add':
+        if list[0] == 'nop':
+            char = '000|000|00000|00000|00000|00000000000'
+        elif list[0] == 'add':
             char = '001|XXX|'
             if len(list) is not 4:
                 raise TypeError
