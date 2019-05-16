@@ -9,10 +9,9 @@ with open(Config.file_in) as f:
     orig = []
     instr = []
     for line in f:
-        # for comments: //comments
-        if line.startswith('//'):
-            continue
         line = line.replace('\n',"").lower()
+        #Comments! -> ;like this
+        line = line.split(';')[0]
         if len(line) is 0:
             continue
         orig.append(line)
