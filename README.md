@@ -49,6 +49,8 @@ More info on [config.py](config.py)
   beq r1,r1,#3 ;OMG HOW THIS WORKS
   00100010001110110010010001111011
   01101110101001110100100000001100;M;O;R;E COMMENTS!
+  6EA7480C;Also works with hexa :)
+  ;1 per line
   ```
 2. Execute the program:
    - You can open a terminal on path and type `python inst-translate.py` \(You can see err msg\)
